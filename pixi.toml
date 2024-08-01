@@ -1,0 +1,21 @@
+[project]
+name = "python-energie-prijs-verwerking"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Theo van der Sluijs <theo@vandersluijs.nl>"]
+channels = ["conda-forge"]
+platforms = ["linux-aarch64", "osx-arm64"]
+
+[tasks]
+ePrijzenVerwerking = "python src/main.py"
+
+[activation.env]
+PY_ENV = "prod"
+
+[dependencies]
+python = ">=3.11"
+apscheduler = ">=3.10.4,<3.11"
+beautifulsoup4 = ">=4.12.3,<4.13"
+entsoe-py = ">=0.6.8,<0.7"
+pyyaml = ">=6.0.1,<6.1"
+requests = ">=2.32.3,<2.33"

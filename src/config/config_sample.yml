@@ -1,0 +1,16 @@
+entsoe:
+  key: op://Server-Prod/entsoe api key/password
+login:
+  email: op://Server-Prod/Energie-Prijs-Verwerker 1.0 Login/username
+  password: op://Server-Prod/Energie-Prijs-Verwerker 1.0 Login/password
+  salt: op://Server-Prod/Energie-Prijs-Verwerker 1.0 Login/salt
+API:
+  ip: 127.0.0.1
+  port: 5001
+  http: http
+
+# fill data from 1password
+#> APP_ENV=Prod op inject -i config_sample.yml -o production.yml
+#> APP_ENV=Dev op inject -i config_sample.yml -o development.yml
+# op inject -i src/config/config_sample.yml -o src/config/production.yml
+# op inject -i src/config/config_sample.yml -o src/config/development.yml
