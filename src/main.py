@@ -196,7 +196,6 @@ def get_countries(bearer_key:str="")->dict:
         return {}
 
 if __name__ == "__main__":
-    proces_prices()
     # verwerk direct bij opstart op dev en acc
     if PY_ENV != 'prod':
         # proces_leveranciers()

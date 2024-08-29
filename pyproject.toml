@@ -4,6 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["Theo van der Sluijs <theo@vandersluijs.nl>"]
 readme = "README.md"
+packages = [
+    { include = "resources", from="src"}
+]
 
 [tool.poetry.dependencies]
 python = "3.12.3"
