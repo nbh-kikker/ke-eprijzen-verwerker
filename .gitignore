@@ -147,3 +147,4 @@ dmypy.json
 .pixi
 *.egg-info
 
+.vscode
